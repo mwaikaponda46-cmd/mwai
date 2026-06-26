@@ -1,0 +1,24 @@
+{
+  "name": "dating-site",
+  "version": "1.0.0",
+  "description": "A responsive dating website with user authentication",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

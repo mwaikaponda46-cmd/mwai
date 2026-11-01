@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work | Adiviking</title>
+    <link rel="stylesheet" href="graphicdesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .project-image {
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            background: #eee;
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .project-card:hover .project-image img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="Homepage.html" class="logo">
+                <span class="logo-icon">A</span>
+                <span class="logo-text">Adiviking</span>
+            </a>
+
+            <nav class="nav" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="Homepage.html" class="nav-link">Home</a></li>
+                    <li><a href="OurWork.html" class="nav-link active">Our Work</a></li>
+                    <li><a href="Services.html" class="nav-link">Services</a></li>
+                    <li><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                    <li><a href="Pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="ContactUs.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Work</h1>
+            <p>A selection of projects we’ve crafted for brands that want to stand out. Explore our logo designs, brand identities, social media graphics, posters, flyers, business cards, banners and brochures.</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="work-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="logo">Logo Design</button>
+                <button class="filter-btn" data-filter="branding">Brand Identity</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="print">Posters & Flyers</button>
+                <button class="filter-btn" data-filter="cards">Business Cards</button>
+                <button class="filter-btn" data-filter="banners">Banners & Brochures</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Logo Design 1 -->
+                <article class="project-card" data-category="logo">
+                    <div class="project-image">
+                        <img src="logo1.jpg" alt="GreenNest Logo Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>GreenNest Logo</h3>
+                        <p>A clean, modern logo created for an eco-friendly lifestyle brand. The design uses natural shapes and a fresh green palette to reflect sustainability and growth.</p>
+                    </div>
+                </article>
+
+                <!-- Logo Design 2 -->
+                <article class="project-card" data-category="logo">
+                    <div class="project-image">
+                        <img src="logo2.jpg" alt="NovaTech Logo Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Logo Design</span>
+                        <h3>NovaTech Symbol</h3>
+                        <p>Minimalist tech logo with a strong geometric mark. Designed to work perfectly across digital platforms, app icons and print materials.</p>
+                    </div>
+                </article>
+
+                <!-- Brand Identity 1 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600&h=400&fit=crop" alt="NovaTech Brand Identity">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Brand Identity</span>
+                        <h3>NovaTech Full Rebrand</h3>
+                        <p>Complete brand identity system including logo, color palette, typography, brand guidelines and stationery.</p>
+                    </div>
+                </article>
+
+                <!-- Brand Identity 2 -->
+                <article class="project-card" data-category="branding">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop" alt="Lumen Skincare Brand Identity">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Brand Identity</span>
+                        <h3>Lumen Skincare Identity</h3>
+                        <p>Elegant and premium brand identity for an organic skincare line. Soft tones, refined typography and cohesive packaging system.</p>
+                    </div>
+                </article>
+
+                <!-- Social Media 1 -->
+                <article class="project-card" data-category="social">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop" alt="FitLife Social Media Graphics">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Social Media Graphics</span>
+                        <h3>FitLife Instagram Pack</h3>
+                        <p>Full set of social media templates, post designs and story graphics for a fitness brand.</p>
+                    </div>
+                </article>
+
+                <!-- Social Media 2 -->
+                <article class="project-card" data-category="social">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop" alt="Bloom & Co Social Media Campaign">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Social Media Graphics</span>
+                        <h3>Bloom & Co. Campaign</h3>
+                        <p>A 3-month social media content series with custom graphics that increased engagement by 140%.</p>
+                    </div>
+                </article>
+
+                <!-- Posters & Flyers 1 -->
+                <article class="project-card" data-category="print">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="City Arts Festival Poster">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Posters & Flyers</span>
+                        <h3>City Arts Festival Poster</h3>
+                        <p>Bold and colorful poster design for a major cultural event.</p>
+                    </div>
+                </article>
+
+                <!-- Posters & Flyers 2 -->
+                <article class="project-card" data-category="print">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&h=400&fit=crop" alt="Summer Promo Flyers">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Posters & Flyers</span>
+                        <h3>Summer Promo Flyers</h3>
+                        <p>Eye-catching double-sided flyers for a retail summer campaign.</p>
+                    </div>
+                </article>
+
+                <!-- Business Cards 1 -->
+                <article class="project-card" data-category="cards">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop" alt="Professional Business Cards">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Business Cards</span>
+                        <h3>Professional Cards</h3>
+                        <p>Premium business card design with elegant typography and a clean layout.</p>
+                    </div>
+                </article>
+
+                <!-- Business Cards 2 -->
+                <article class="project-card" data-category="cards">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop" alt="Creative Studio Business Cards">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Business Cards</span>
+                        <h3>Creative Studio Cards</h3>
+                        <p>Modern business cards featuring bold color blocking for a creative agency.</p>
+                    </div>
+                </article>
+
+                <!-- Banners & Brochures 1 -->
+                <article class="project-card" data-category="banners">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=400&fit=crop" alt="Trade Show Banners">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Banners & Brochures</span>
+                        <h3>Trade Show Banners</h3>
+                        <p>Large-format pull-up and backdrop banners for events and exhibitions.</p>
+                    </div>
+                </article>
+
+                <!-- Banners & Brochures 2 -->
+                <article class="project-card" data-category="banners">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop" alt="Company Brochure Design">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Banners & Brochures</span>
+                        <h3>Company Brochure</h3>
+                        <p>Multi-page brochure with clean layouts and strong visuals for a corporate client.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="work-cta">
+        <div class="container">
+            <h2>Like what you see?</h2>
+            <p>Let’s create something great together for your brand.</p>
+            <a href="ContactUs.html" class="btn btn-primary">Start a Project</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="Homepage.html" class="logo">
+                        <span class="logo-icon">A</span>
+                        <span class="logo-text">Adiviking</span>
+                    </a>
+                    <p>Creating visual experiences that inspire and convert.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:adivikingbulambo@gmail.com">adivikingbulambo@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> 
+                        <a href="tel:+265990260096">+265 990 260 096</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        Lilongwe Area 25, Zomba Chanco Chikanda
+                    </p>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/265990260096" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://t.me/adivikingBulambo" target="_blank" rel="noopener" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="mailto:adivikingbulambo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adiviking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // Project filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
